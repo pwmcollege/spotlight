@@ -1,4 +1,4 @@
-name: Rotate Spotlight
+name: Rotate Challenges
 
 on:
   schedule:
@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
 
 env:
+  DOJO_ID: ${{ vars.DOJO_ID }}
   COMMUNITY_COUNT: "10"
   OFFICIAL_COUNT: "10"
   ALLOW_COURSE_DOJOS: "false"
@@ -25,7 +26,7 @@ jobs:
       - name: Select challenges
         run: |
           python -m pip install --upgrade -q -r requirements.txt
-          python scripts/rotate.py spotlight~072ac3dc ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
+          python scripts/rotate.py "${DOJO_ID:?Set the DOJO_ID repository variable}" ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
 
       - name: Commit the selection
         run: |
