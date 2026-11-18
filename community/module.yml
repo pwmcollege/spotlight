@@ -1,0 +1,41 @@
+challenges:
+- import:
+    dojo: intro-forensics~a7d1dc3d
+    module: intro
+    challenge: steghide
+- import:
+    dojo: dos-dojo~c41cb03a
+    module: ms-dos
+    challenge: type
+- import:
+    dojo: content-injection~24cec712
+    module: html-js
+    challenge: class-cancelled-3
+- import:
+    dojo: fluffy~ea96493b
+    module: exploitation
+    challenge: the-final-commission
+- import:
+    dojo: pwnteras~f25dff24
+    module: escape-room-crash-course
+    challenge: codecs-rot13
+- import:
+    dojo: acsac-ctfs
+    module: challenges
+    challenge: the-morris-worm
+- import:
+    dojo: arm-architecture
+    module: intro-to-arm
+    challenge: set-register-large
+- import:
+    dojo: districtcon~f1b3d7f0
+    module: '2025'
+    challenge: level4
+- import:
+    dojo: tyler~93cea8a8
+    module: crypto
+    challenge: character-cryptography
+- import:
+    dojo: rii-router-dojo~ae00dd3a
+    module: challenges
+    challenge: exploiting

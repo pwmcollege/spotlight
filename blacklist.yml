@@ -1,0 +1,10 @@
+blacklist:
+  - dojo: demo-dojo
+  - dojo: example
+  - dojo: robwaz-dojo~289c5b68
+  - dojo: cyberguard-ethical-hacking~10ef1c63
+  - dojo: gca-ctf~8018193d
+  - dojo: honors-dojo~28e0e34e
+  - dojo: honors-dojo~9d345510
+  - dojo: imattasdojo~894900d9
+  - dojo: welcome

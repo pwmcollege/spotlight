@@ -1,6 +1,6 @@
 name: Update Dojo
 
-on: push
+on: [push, workflow_dispatch]
 
 jobs:
   update:
@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: pwncollege/dojo-update@v1
         with:
-          dojo: example
+          dojo: spotlight~072ac3dc
           update_code: ${{ secrets.UPDATE_CODE }}

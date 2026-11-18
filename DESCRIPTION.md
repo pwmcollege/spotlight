@@ -1,2 +1,1 @@
-This is an [example dojo](https://github.com/pwncollege/example-dojo).
-Fork this repository, and create your own dojo!
+Feeling lucky? Spotlight features a new selection of random challenges from community dojos and the official pwn.college curriculum every Sunday
