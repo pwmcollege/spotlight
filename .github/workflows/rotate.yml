@@ -12,7 +12,7 @@ env:
   OFFICIAL_COUNT: "10"
   ALLOW_COURSE_DOJOS: "false"
 
-concurrency: spotlight-rotation
+concurrency: rotation
 
 jobs:
   rotate:
