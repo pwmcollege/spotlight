@@ -1,41 +1,41 @@
 challenges:
 - import:
-    dojo: intro-forensics~a7d1dc3d
-    module: intro
-    challenge: steghide
+    dojo: asuhc~28963ed5
+    module: meeting-1
+    challenge: challenge-3
 - import:
-    dojo: dos-dojo~c41cb03a
-    module: ms-dos
-    challenge: type
+    dojo: thaw~84f102b7
+    module: thaw
+    challenge: thaw2
 - import:
-    dojo: content-injection~24cec712
-    module: html-js
-    challenge: class-cancelled-3
+    dojo: westworld~d30d9828
+    module: westworld
+    challenge: bossfmt-revenge
 - import:
-    dojo: fluffy~ea96493b
-    module: exploitation
-    challenge: the-final-commission
-- import:
-    dojo: pwnteras~f25dff24
-    module: escape-room-crash-course
-    challenge: codecs-rot13
-- import:
-    dojo: acsac-ctfs
-    module: challenges
-    challenge: the-morris-worm
-- import:
-    dojo: arm-architecture
-    module: intro-to-arm
-    challenge: set-register-large
-- import:
-    dojo: districtcon~f1b3d7f0
-    module: '2025'
-    challenge: level4
+    dojo: windows-warzone
+    module: windows-crash-course
+    challenge: level-6
 - import:
     dojo: tyler~93cea8a8
-    module: crypto
-    challenge: character-cryptography
+    module: rev
+    challenge: shift-cipher-2
 - import:
-    dojo: rii-router-dojo~ae00dd3a
-    module: challenges
-    challenge: exploiting
+    dojo: intro-forensics~a7d1dc3d
+    module: intro
+    challenge: xxd
+- import:
+    dojo: pwntools~9b09c9dc
+    module: pwntools
+    challenge: level-3-0
+- import:
+    dojo: lord-of-osint~9e1a1da1
+    module: geosint
+    challenge: sapline
+- import:
+    dojo: web-security~f98637a0
+    module: cross-site-scripting
+    challenge: reflect-log
+- import:
+    dojo: kernel-exercise-collection~433e348b
+    module: makeway
+    challenge: wall-rose

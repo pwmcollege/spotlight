@@ -1,41 +1,41 @@
 challenges:
 - import:
-    dojo: software-exploitation
-    module: dynamic-allocator-exploitation
-    challenge: level-8-1
+    dojo: program-security
+    module: dynamic-allocator-misuse
+    challenge: level-5-0
+- import:
+    dojo: intro-to-cybersecurity
+    module: web-security
+    challenge: xss-stored-html
+- import:
+    dojo: system-security
+    module: race-conditions
+    challenge: level-11-1
+- import:
+    dojo: linux-luminarium
+    module: man
+    challenge: challenge-arg
 - import:
     dojo: fundamentals
     module: talking-web
-    challenge: http-form-browser-noform
-- import:
-    dojo: intro-to-cybersecurity
-    module: reverse-engineering
-    challenge: cimg-color-c
-- import:
-    dojo: computing-101
-    module: numbers-as-strings
-    challenge: atoi
-- import:
-    dojo: program-security
-    module: program-security
-    challenge: bounds-breaker-hard
-- import:
-    dojo: system-security
-    module: system-exploitation
-    challenge: level-2-0
-- import:
-    dojo: linux-luminarium
-    module: commands
-    challenge: cat-chase
+    challenge: http-comment
 - import:
     dojo: software-exploitation
     module: dynamic-allocator-exploitation
-    challenge: level-7-0
+    challenge: level-4-0
 - import:
-    dojo: fundamentals
-    module: sql-playground
-    challenge: sql-composite-conditions
+    dojo: computing-101
+    module: introspecting
+    challenge: gdb-pop
+- import:
+    dojo: program-security
+    module: dynamic-allocator-misuse
+    challenge: level-10-1
 - import:
     dojo: intro-to-cybersecurity
-    module: binary-exploitation
-    challenge: basic-shellcode
+    module: web-security
+    challenge: cmdi-ls-filter
+- import:
+    dojo: system-security
+    module: sandboxing
+    challenge: level-17
