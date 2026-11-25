@@ -1,9 +1,17 @@
 name: Update Dojo
 
-on: [push, workflow_dispatch]
+on:
+  push:
+    paths: [community/**, official/**, history.yml]
+  workflow_dispatch:
 
 jobs:
   update:
+    if: >-
+      github.event_name == 'workflow_dispatch' || (
+        github.ref_name == github.event.repository.default_branch &&
+        github.event.head_commit.author.email == '41898282+github-actions[bot]@users.noreply.github.com'
+      )
     runs-on: ubuntu-latest
     steps:
       - uses: pwncollege/dojo-update@v1

@@ -1,11 +1,22 @@
 # Spotlight
 
-Every Sunday, Spotlight features up to ten challenges from the official pwn.college curriculum and ten from community dojos. Both modules share a history. A challenge can appear again once both modules have run out of new picks.
+Spotlight features up to ten challenges from the official curriculum and ten from community dojos each week. [Play Spotlight on pwn.college](https://pwn.college/spotlight~072ac3dc/)
 
-The [rotation workflow](./.github/workflows/rotate.yml) sets the schedule, the number of challenges per module, and whether to include course dojos.
+The Official and Community modules share a history. Challenges can return once both pools run out of new picks.
 
-The blacklist covers dojos that repeat content, copy challenges from other dojos, or have broken or unsolvable challenges. An entry can exclude an entire dojo, one module, or a single challenge. See [blacklist.yml](./blacklist.yml).
+## Configuration
 
-## Automatic updates
+| Repository variable | Controls |
+| --- | --- |
+| `ALLOW_COURSE_DOJOS` | Whether course dojos are eligible |
+| `AUTO_PRUNE_LEGACY_AWARDS` | Set to `true` to prune after a successful rotation update |
+| `COMMUNITY_COUNT` | Number of community picks |
+| `OFFICIAL_COUNT` | Number of official picks |
 
-Rotation pushes the new picks with the `ROTATE_DEPLOY_KEY` deploy key. The push triggers [Update Dojo](./.github/workflows/update.yml), which uses the `UPDATE_CODE` secret from the dojo admin page. Either workflow can also be run manually from GitHub Actions.
+Use [blacklist.yml](./blacklist.yml) to exclude duplicate, broken, or unsolvable content by dojo, module, or challenge.
+
+## Workflows
+
+1. [Rotate Challenges](./.github/workflows/rotate.yml) selects the lineup on Sundays at 6:21 a.m. Pacific.
+2. [Update Dojo](./.github/workflows/update.yml) publishes the rotation to pwn.college.
+3. [Prune Legacy Awards](./.github/workflows/prune.yml) marks outdated completion awards stale.
